@@ -1,0 +1,71 @@
+.container{
+    display: grid;
+    grid-row: 1fr 3fr 1fr;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas: 
+    'header header'
+    'navigation navigation'
+    'search-related main-comment'
+    'footer footer';
+    font-family: sans-serif;
+}
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+}
+.navigation{
+    grid-area: navigation;
+    background-color: dimgrey;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    height: 40px;
+    margin-top: 15px;
+}
+.search-related{
+    grid-area: search-related;
+    background-color: rgb(231, 231, 231);
+    margin-top: 10px;
+    height: 45vh;
+}
+.search{
+    grid-area: search;
+    background-color: darkgrey;
+    height: 20vh;
+    margin: 10px;  
+}
+.related{
+    grid-area: related;
+    background-color: darkgrey;
+    margin: 10px;
+    height: 20vh;
+}
+.main-comment{
+    grid-area: main-comment;
+    /* gap: 10px; */
+    margin: 10px;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(232, 232, 232);
+    height: 15vh;
+    padding: 10px;
+}
+.comment{
+    grid-area: comment;
+    background-color: rgb(187, 185, 185);
+    padding: 10px;
+    height: 23vh;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+}
